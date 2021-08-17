@@ -1,0 +1,23 @@
+Customer-Wallet Controller is the main controller
+servert.port = 8080
+http://localhost:8080/swagger-ui.html
+
+Transaction Controller is contacted by Customer-Wallet Controller
+servert.port = 8081
+http://localhost:8081/swagger-ui.html
+
+Eureka for payment
+servert.port=8761
+
+Customer-controller is used to add customer (/addCustomer)
+bank-account-controller is used to map a bank corresponding to a wallet id 
+
+/authenticate is used for login and is present in security Controller
+
+/WalletLogout is used for session logout it will delete the persisted jwtToken and is present in wallet controller
+
+/customers will be invoked only when admin is used.
+ 
+ 
+
+
